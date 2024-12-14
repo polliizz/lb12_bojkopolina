@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+class Vehicle {
+public:
+    void move(double distance) {
+        cout << "автомобіль проїхав " << distance << " метрів" << endl;
+    }
+};
+class Bicycle : public Vehicle {
+public:
+    void ringBell() {
+        cout << "ring " << endl;
+    }
+};
+
+int main() {
+    Bicycle myBike;
+    myBike.move(12.7); 
+    myBike.ringBell();
+}
